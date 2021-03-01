@@ -1,0 +1,98 @@
+{% include head.html %}
+	<!-- MAIN CONTENT PART START -->
+	<div class="bg-img color-white main-container">
+{% include nav.html %}
+		<!-- BODY CONTENT PART START -->
+		<div id="main-content-{{ page.nav }}" class="xs-no-positioning fixed fixed-middle">
+			<div><!-- TITLE PART START -->
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="title">
+								<span class="contact-main-title">Contactez nous !</span>
+								<p class="contact-small-title">Me and my friends are currently working hard  building this website</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- TITLE PART END -->
+				
+				<!-- CONTACT FORM PART START -->
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-sm-12 col-md-12 col-lg-7 col-xl-7">
+							<div class="contact-form-main-div">
+								<form id="contact-form" action="https://getform.io/f/96ede4c7-a646-4285-9e39-ff110a2c0208" method="POST" class="clearfix text-center">
+									<div class="row">
+										<!-- IF MAIL SENT SUCCESSFULLY -->
+										<div class="success">Your message has been sent successfully.</div>
+										<!-- IF MAIL SENDING UNSUCCESSFULL-->
+										<div class="error">E-mail must be valid and message must be longer than 1 character.</div>
+
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form-field">
+											<input type="text" id="name" name="name" class="form-control" placeholder="nom complet">
+											<i class="icofont icofont-user"></i>
+										</div>
+
+										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form-field">
+											<input type="email" id="email_address" name="email" class="form-control" placeholder="Adresse Email">
+											<i class="icofont icofont-envelope"></i>
+										</div>
+
+										<div class="col-md-12 col-lg-12 col-xl-12 form-field">
+											<textarea id="message" name="message" class="form-control" placeholder="Message" rows="5"></textarea>
+										</div>
+
+									</div>
+									<button type="submit" name="submit" id="submit" class="btn btn-purple">Envoyer <i class="icofont icofont-arrow-right"></i></button>
+								</form>
+								<!-- /end contact-form -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- CONTACT FORM PART END -->
+			</div>
+		</div>
+		<!-- BODY CONTENT PART END -->
+
+		<!-- FOOTER PART START-->
+		<div id="footer" class="fixed fixed-bottom bg-footer py-3">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-xs-12 col-sm-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center">
+						<a href="#">&copy; 2021 MCF</a>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 text-center">
+						<div class="footer-logo">
+							<img class="w-100" src="{{ site.url }}/assets/img/logo.png" alt="">
+						</div>
+					</div>
+
+					<!-- /START SOCIAL ICONS -->
+					<div class="col-xs-12 col-sm-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+						<div class="text-center">
+							<ul class="list-inline social-icons social-icons">
+								<li><a href="https://www.linkedin.com/in/stephanemanet" target="_blank" class=""><i class="icofont icofont-social-linkedin"></i></a></li>
+								<li><a href="https://github.com/stephmnt" target="_blank" class=""><i class="icofont icofont-social-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /END SOCIAL ICONS -->
+				</div>
+			</div>
+		</div>
+		<!-- FOOTER PART END-->
+
+	</div>
+	<!-- /MAIN CONTENT PART ENDS -->
+
+	<!-- jQuery -->
+	<script src="{{ site.url }}/assets/js/jquery-3.2.1.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
+	<!-- scripts -->
+	<script src="{{ site.url }}/assets/js/scripts.js"></script>
+</body>
+</html>

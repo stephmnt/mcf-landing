@@ -1,0 +1,106 @@
+{% include head.html %}
+	<!-- MAIN CONTENT PART START -->
+	<div class="bg-img color-white main-container">
+{% include nav.html %}
+    <!-- BODY CONTENT PART START -->
+		<div id="main-content-{{ page.nav }}" class="xs-no-positioning fixed fixed-middle positon-fix-style-1">
+
+            <div><!-- TITLE PART START -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="title">
+                                <span class="main-title">{{ page.title }}</span>
+                                <p class="small-title">{{ content }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TITLE PART END -->
+                
+                <!-- COUNTER PART START -->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 col-md-10 col-lg-7 col-xl-7">
+                            <div class="home1-counter-box">
+                                <input type="hidden" id="count-down-date" name="count-down-date" value="31 Jun, 2021 12:00:00">
+                                <h2 class="expired-text hidden">Bienvenue sur notre site !</h2>
+                                
+                                <div class="home1-countdown-timer" id="countdown-boxes">
+                                    <ul class="list-inline count-down-list text-center">
+                                        <li id="years">
+                                            <span class="years"></span>
+                                            <span class="counter-time-title">Années</span>
+                                        </li>
+                                        <li id="months">
+                                            <span class="months"></span>
+                                            <span class="counter-time-title">Mois</span>
+                                        </li>
+                                        <li id="days">
+                                            <span class="days"></span>
+                                            <span class="counter-time-title">Jours</span>
+                                        </li>
+                                        <li id="hours">
+                                            <span class="hours"></span>
+                                            <span class="counter-time-title">Heures</span>
+                                        </li>
+                                        <li id="minutes">
+                                            <span class="minutes"></span>
+                                            <span class="counter-time-title">Minutes</span>
+                                        </li>
+                                        <li id="seconds">
+                                            <span class="seconds"></span>
+                                            <span class="counter-time-title">Secondes</span>
+                                        </li>
+                                    </ul>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- COUNTER PART END -->
+
+                <!-- SUBSCRIBE FORM PART START-->
+                <div id="subscribe-form">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <!-- /START SUBSCRIBE FORM -->
+                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 col-xl-6  text-center">
+                                <div id="mc_embed_signup" class="subscribe-form text-center">
+                                    <form class="form-inline mx-auto" action="https://manet-formation.us1.list-manage.com/subscribe/post?u=a5f1f03992be78f7c89078736&amp;id=0e8d530899" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <div id="mc_embed_signup_scroll">
+                                            <div class="mc-field-group">                                        
+                                                <input type="email" value="" class="required email form-control btn-rounded" id="mce-EMAIL" name="EMAIL" class="form-control btn-rounded" placeholder="votre@email.com">
+                                            </div>
+                                            <div id="mce-responses" class="clear">
+                                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                                <div class="response" id="mce-success-response" style="display:none"></div>
+                                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->                                    
+                                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a5f1f03992be78f7c89078736_0e8d530899" tabindex="-1" value=""></div>
+                                            <div class="clear"><input type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="btn btn-purple btn-round button"></div>
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- /END SUBSCRIBE FORM -->
+                        </div>
+                    </div>
+                </div>
+                <!-- SUBSCRIBE FORM PART END-->
+            </div>
+
+        </div>
+        <!-- BODY CONTENT PART END -->
+        
+        </div>
+        <!-- /MAIN CONTENT PART ENDS -->
+        
+<!-- jQuery -->
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- scripts -->
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
